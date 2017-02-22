@@ -9,6 +9,15 @@ public class eIocIIBananaListener : MonoBehaviour, IDisposable {
 
     Signals.BananaToggleSignal banana_toggle_signal;
 
+	Image _image_banana;
+	Image image_banana {
+		get {
+			if (_image_banana == null)
+				_image_banana = gameObject.AddComponent<Image> ();
+			return _image_banana;
+		}
+	}
+
     [Inject]
     public void Construct(Signals.BananaToggleSignal _banana_toggle_signal)
     {
@@ -33,7 +42,7 @@ public class eIocIIBananaListener : MonoBehaviour, IDisposable {
 
     void ToggleImage(bool state)
     {
-        GetComponent<Image>().enabled = state;
+		image_banana.enabled = state;
     }
 
     public void Dispose()

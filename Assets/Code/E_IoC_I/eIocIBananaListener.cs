@@ -7,6 +7,15 @@ using Zenject;
 
 public class eIocIBananaListener : MonoBehaviour {
 
+	Image _image_banana;
+	Image image_banana {
+		get {
+			if (_image_banana == null)
+				_image_banana = gameObject.AddComponent<Image> ();
+			return _image_banana;
+		}
+	}
+
     BananaImageWorker banana_image_worker;
 
     [Inject]
@@ -33,7 +42,7 @@ public class eIocIBananaListener : MonoBehaviour {
 
     void ToggleImage(bool state)
     {
-        GetComponent<Image>().enabled = state;
+		image_banana.enabled = state;
     }
 }
 

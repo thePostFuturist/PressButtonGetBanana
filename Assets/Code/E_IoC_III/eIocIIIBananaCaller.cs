@@ -6,13 +6,14 @@ using Zenject;
 
 public class eIocIIIBananaCaller : MonoBehaviour {
 
-    [Inject(Id="Organic")]
+	[InjectOptional(Id="Organic")]
     Image banana;
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-            banana.enabled = true;
+		if (Input.GetKeyDown (KeyCode.Space)) {
+			banana.enabled = true;
+		}
     }
 }
    
