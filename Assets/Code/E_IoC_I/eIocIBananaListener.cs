@@ -11,7 +11,7 @@ public class eIocIBananaListener : MonoBehaviour {
 	Image image_banana {
 		get {
 			if (_image_banana == null)
-				_image_banana = gameObject.AddComponent<Image> ();
+				_image_banana = gameObject.GetComponent<Image> ();
 			return _image_banana;
 		}
 	}
