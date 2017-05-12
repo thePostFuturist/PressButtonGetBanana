@@ -1,5 +1,5 @@
 ﻿using Zenject;
 
 namespace Signals {
-    public class BananaToggleSignal : Signal<BananaToggleSignal, bool> {}
+    public class BananaToggleSignal : Signal<bool, BananaToggleSignal> {}
 }

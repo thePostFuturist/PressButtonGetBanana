@@ -27,7 +27,7 @@ public class eIocIIBananaListener : MonoBehaviour, IDisposable {
     [Inject]
     public void Subscribe()
     {
-		banana_toggle_signal += ToggleImage;
+        banana_toggle_signal.Listen (ToggleImage);
     }
 
     void Start()
@@ -47,7 +47,7 @@ public class eIocIIBananaListener : MonoBehaviour, IDisposable {
 
     public void Dispose()
     {
-        banana_toggle_signal -= ToggleImage;
+        banana_toggle_signal.Unlisten (ToggleImage);
     }
 }
 

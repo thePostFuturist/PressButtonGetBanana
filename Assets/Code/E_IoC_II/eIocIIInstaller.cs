@@ -5,6 +5,7 @@ public class eIocIIInstaller : MonoInstaller
 {
     public override void InstallBindings()
     {
-        Container.BindSignal<Signals.BananaToggleSignal>();
+        Container.DeclareSignal<Signals.BananaToggleSignal>();
+        
     }
 }
