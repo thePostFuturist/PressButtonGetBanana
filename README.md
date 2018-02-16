@@ -21,4 +21,4 @@ cp -r Zenject/UnityProject/Assets/Plugins/Zenject Assets
 ```
 
 # Lesson:
-The talk is located on [**Youtube**](https://unity3d.com/get-unity/download?thank-you=update&download_nid=47505&os=Win).  
+The talk is located on [**the VirtualityRipple YouTube Channel**](https://www.youtube.com/playlist?list=PLGKDmLYR31_jdHwaik46p2K5GMTUhv5GA).
